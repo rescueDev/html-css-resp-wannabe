@@ -50,7 +50,7 @@
 #why .row img {
   background-color: #428bca;
   border-radius: 50%;
-  padding: 30px
+  padding: 30px;
 }
 
 /* COMMON */
@@ -74,19 +74,38 @@ img {
 
 
 /* media query css */
-@media screen and (max-width: 420px) {
+@media screen and (min-width: 50px) and (max-width:420px) {
 
 
-
-
-  .container .row .left {
+  .row {
     width: 100%;
-    float: none;
-
   }
 
-  .container .row .right {
-    width: 100%;
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 50%;
+    margin:auto;
     float: none;
-    }
-}
+  }
+
+  #lezioni .row img,
+  #steps .row img,
+  #why .row img {
+    max-width: 100%;
+    margin-top:20px;
+  }
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: 50%;
+    margin: auto;
+    float: none;
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 50%;
+    margin: auto;
+  }
